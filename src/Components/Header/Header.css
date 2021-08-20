@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
 }
 
 .header__logo {
@@ -15,7 +19,20 @@
   display: flex;
   align-items: center;
   width: 40%;
-  border: 1px solid black;
+  border: 1px solid lightgray;
+}
+
+.header__inputButton {
+  width: 50px !important;
+  background-color: #fafafa;
+  border-left: 1px solid lightgray;
+  color: gray;
+}
+
+.header__input > input {
+  /* this targets a specific child */
+  flex: 1;
+  border: none;
 }
 
 .header__icons {
@@ -23,8 +40,6 @@
   align-items: center;
 }
 
-.header__input > input {
-  /* this targets a specific child */
-  flex: 1;
-  border: none;
+.header__icons {
+  margin-right: 5px;
 }

@@ -16,14 +16,14 @@ function Header() {
         </div>
 
         <div className="header__input">
-            <input type="text" />
-            <SearchIcon />
+            <input placeholder="Search" type="text" />
+            <SearchIcon className="header__inputButton" />
         </div>
 
         <div className="header__icons">
-            <VideoCallIcon />
-           <AppsIcon />
-           <NotificationsIcon />
+            <VideoCallIcon className="header__icon" />
+           <AppsIcon className="header__icon" />
+           <NotificationsIcon className="header__icon" />
            <Avatar 
             alt="Avatar Image"
             src="https://avatars.githubusercontent.com/u/82294371?s=400&u=1b606085b4f74ff752dec27c89ace37b4cdc2ac5&v=4"
