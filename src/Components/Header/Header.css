@@ -1,0 +1,10 @@
+.header {
+  display: flex; /* puts the children in a row*/
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 25px;
+  object-fit: contain; /* if image is distorted can be used anywhere*/
+}
