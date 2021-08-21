@@ -4,7 +4,10 @@ import './MainArea.css';
 function MainArea() {
     return (
         <div className='mainarea'>
-            <h1>Videos hereerererere</h1>
+            <h2>Videos</h2>
+            <div className="mainarea__video">
+              
+            </div>
         </div>
     )
 }
