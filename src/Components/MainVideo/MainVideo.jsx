@@ -1,8 +1,7 @@
 import React from 'react';
-import './Video.css';
 
 const MainVideo = ({ selectedVideo }) => {
-    if(!selectedVideo) return <div>Search..</div>
+    if(!selectedVideo) return <div>Watch something!</div>
 
     const videoSrc = `https://www.youtube.com/embed/${selectedVideo.id.videoId}`;
 

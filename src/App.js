@@ -6,6 +6,7 @@ import MainArea from './Components/MainArea/MainArea';
 import CommentForm from './Components/CommentForm/CommentForm';
 import youtube from './Components/API/youtube';
 
+console.log(process.env.REACT_APP_GOOGLE_API_KEY)
 
 class App extends Component {
   state = {
