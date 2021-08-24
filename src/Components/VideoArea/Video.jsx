@@ -1,17 +1,19 @@
 import React from 'react';
-import './Video.css';
-// import Avatar from '@material-ui/core/Avatar';
 
-const Video = ({ video, onVideoSelect }) => {
-    if(!video) return <div></div>
+const Video = ({ selectedVideo }) => {
+    if(!selectedVideo) return <div>No Active Video! Try searching for Videos!</div>
+
+    const videoSrc = `https://www.youtube.com/embed/${selectedVideo.id.videoId}`;
 
     return (
-        <div className="video" onClick={() => onVideoSelect(video)}>
-            <img className="video__thumbnail" src={video.snippet.thumbnails.default.url} alt="video"/>
-            <div className="video__text">
-                <h3>{video.snippet.title}</h3>
-                <p className="video__headline">{video.snippet.channelTitle}</p>
-            </div>
+        <div>
+            <iframe id="ytplayer" type="text/html" width="1000" height="562.5"
+                src={videoSrc}
+                frameborder="0">
+            </iframe>
+            <h2>{selectedVideo.snippet.title}</h2>
+            <h4>{selectedVideo.snippet.channelTitle}</h4>
+            <p>{selectedVideo.snippet.description}</p>
         </div>
     )
 }
