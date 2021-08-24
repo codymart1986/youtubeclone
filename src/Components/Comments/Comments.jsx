@@ -1,8 +1,8 @@
 import React from 'react';
 import Comment from '../Comment/Comment';
 
-const Comments = ({comments}) => {
-    const listOfComments = comments.map((comment, id) => <Comment key={id} comment={comment} />)
+const Comments = ({comments, addLike, addDislike}) => {
+    const listOfComments = comments.map((comment, id) => <Comment key={id} comment={comment} addLike={addLike} addDislike={addDislike}/>)
 
     return(
         <div className="comments">

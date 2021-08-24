@@ -1,5 +1,5 @@
 .header {
-  display: flex; /* puts the children in a row*/
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
@@ -11,7 +11,7 @@
 
 .header__logo {
   height: 25px;
-  object-fit: contain; /* if image is distorted can be used anywhere*/
+  object-fit: contain;
   margin-left: 20px;
 }
 
@@ -19,20 +19,14 @@
   display: flex;
   align-items: center;
   width: 40%;
-  border: 1px solid lightgray;
+  border: 1px solid lightgrey;
 }
 
 .header__inputButton {
   width: 50px !important;
   background-color: #fafafa;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid lightgrey;
   color: gray;
-}
-
-.header__input > input {
-  /* this targets a specific child */
-  flex: 1;
-  border: none;
 }
 
 .header__icons {
@@ -40,6 +34,15 @@
   align-items: center;
 }
 
-.header__icons {
-  margin-right: 5px;
+.header__icon {
+  margin-right: 8px;
+}
+
+.header__input > input {
+  flex: 1;
+  border: none;
+}
+
+form {
+  display: flex;
 }

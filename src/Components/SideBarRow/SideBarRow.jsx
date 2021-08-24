@@ -1,13 +1,11 @@
 import React from 'react';
-import "./SideBarRow.css";
+import './SideBarRow.css';
 
 function SideBarRow({ selected, Icon, title }) {
     return (
-        <div className={`sidebarRow ${selected && 'selected'}`}>
-            {/* allows prop to be passed; if selected then add the selected class */}
-            <Icon className="sidebarRow__icon" />  
-            
-            <h2 className="sidebarRow__title">{title}</h2>
+        <div className={`sideBarRow ${selected && 'selected'}`}>
+            <Icon className="sideBarRow__icon"/>
+            <h2 className="sideBarRow__title">{title}</h2>
         </div>
     )
 }
