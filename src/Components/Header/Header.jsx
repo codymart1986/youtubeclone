@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search"
@@ -8,6 +8,8 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
 
 function Header() {
+    const [inputSearch, setInputSearch] = useState("");
+
     return (
         <div className="header">
             <div className="header__left">
@@ -16,8 +18,11 @@ function Header() {
         </div>
 
         <div className="header__input">
-            <input placeholder="Search" type="text" />
-            <SearchIcon className="header__inputButton" />
+            <input onChange={e => setInputSearch(e.target.value)} value={inputSearch} placeholder="Search" type="text" />
+            
+                <SearchIcon className="header__inputButton" />
+            
+            
         </div>
 
         <div className="header__icons">
@@ -26,7 +31,7 @@ function Header() {
            <NotificationsIcon className="header__icon" />
            <Avatar 
             alt="Avatar Image"
-            src="https://avatars.githubusercontent.com/u/82294371?s=400&u=1b606085b4f74ff752dec27c89ace37b4cdc2ac5&v=4"
+            src=""
             />
         </div>
            
