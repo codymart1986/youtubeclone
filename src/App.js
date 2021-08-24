@@ -8,6 +8,7 @@ import youtube from './API/youtube';
 import axios from 'axios';
 import Comments from './Components/Comments/Comments';
 
+/* key should not be sent to github*/
 console.log(process.env.REACT_APP_GOOGLE_API_KEY)
 
 class App extends Component {
@@ -28,7 +29,7 @@ class App extends Component {
       params: {
         part: 'snippet',
         maxResults: 5,
-        key: 'AAIzaSyDGRVRjP6tHBTVo1guL1vJJkSQGyjSTSiw',
+        key: '',
         q: searchTerm,
         type: 'video',
       }
