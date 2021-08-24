@@ -2,7 +2,7 @@ import React from 'react';
 import './Video.css';
 
 const MainVideo = ({ selectedVideo }) => {
-    if(!selectedVideo) return <div>No Active Video! Try searching for Videos!</div>
+    if(!selectedVideo) return <div>Search..</div>
 
     const videoSrc = `https://www.youtube.com/embed/${selectedVideo.id.videoId}`;
 
